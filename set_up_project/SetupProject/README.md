@@ -1,0 +1,21 @@
+Learning Objectives:
+Understand Django MVT architecture
+-Creating a project
+-Apps life Cycle
+-Admin Interface
+-Creating Views
+-URL Mapping
+-Template system
+-Models
+-Page redirection
+-Sending E-mails
+-Generic views
+-Form processing
+-File uploading
+-Apache setup
+-cookies handling
+-sessions
+-caching
+-comments
+-RSS
+-AJAX
