@@ -1,0 +1,28 @@
+{% extends 'main_template.html' %}
+{% block title %}Hello page{% endblock %}
+{% block content %}
+    <p style="text-align:center;">Welcome to My First django App!</p>
+    <div style="background-color:rgb(95, 228, 135);text-align:center;">
+        <p style="color:white;font-size:25px;text-align:center;">{{today}}</p>
+        we are on
+
+        {% if today.day == 1 %}
+        the first day of the month.
+
+        {% elif today.day == 14 %}
+        the mid day of the month.
+
+        {% else %}
+        I don't know.
+
+        {% endif %}
+
+        <p>
+            {% for day in days_of_week %}
+            {{day}}
+        </p>
+        {% endfor %}
+    </div>
+
+{% endblock %}
+
