@@ -22,4 +22,6 @@ from MyApp.views import hello
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/', hello, name='hello_url'),
+
+    path('accounts/', include("accounts.urls")),
 ]
