@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="form-container sign-form" >
+  <form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div>
+      <h1>Sign Up Here</h1>
+    </div>
+    <div>
+        <input type="username" name="username" placeholder="yourusername" required />
+      </div>
+    <div>
+      <input type="email" name="email" placeholder="your@example.com" required />
+    </div>
+    <div>
+      <input type="password" name="password1" placeholder="password" required />
+    </div>
+    <div>
+      <input type="password" name="password2" placeholder="confirm password" required />
+    </div>
+    <div>
+      <input type="submit" value="Sign up">
+    </div>
+    <div>
+      <p>Already have an account? <a href="{% url 'consumer_login' %}">Login here</a></p>
+    </div>
+  </form>
+</section>
+{% endblock %}

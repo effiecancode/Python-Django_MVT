@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="form-container sign-form login">
+  <form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div>
+      <h1>LOGIN HERE</h1>
+    </div>
+    <div>
+      <input type="email" name="email" placeholder="your@example.com" required />
+    </div>
+    <div>
+      <input type="password" name="password" placeholder="password" required />
+    </div>
+    <div>
+      <input type="submit" value="Log in">
+    </div>
+    <div>
+        <p>Don't have an account? <a href="{% url 'create_consumer_user' %}">Register here</a></p>
+    </div>
+    </form>
+  </section>
+{% endblock %}
